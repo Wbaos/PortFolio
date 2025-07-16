@@ -1,2 +1,182 @@
-<h1>Hello World</h1>
-<p>This is a test</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilber Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea6c8c154e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Wilber Banos</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Software Engineer
+      </p>
+      <img
+        src="img/myself-3.jpg"
+        alt="a picture of Jane Smith smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I Do</h2>
+      <div class="services">
+        <!-- Service 1 -->
+        <div class="service">
+          <h3>API Integration & Automation</h3>
+          <p>
+            I connect systems and streamline workflows by integrating APIs and
+            automating processes to make applications faster and more efficient.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <!-- Service 2 -->
+        <div class="service">
+          <h3>E‑Commerce Development</h3>
+          <p>
+            I create and optimize online shopping experiences, building features
+            that improve usability, performance, and overall customer
+            satisfaction.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <!-- Service 3 -->
+        <div class="service">
+          <h3>Full‑Stack Engineering</h3>
+          <p>
+            I build complete web solutions, from intuitive front‑end interfaces
+            to reliable back‑end systems, ensuring projects are scalable and
+            user‑focused.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Software Engineer based in Florida
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          I’m a software engineer with a strong foundation in building modern
+          web applications. I focus on creating clean, user‑friendly solutions
+          that are both efficient and scalable.
+        </p>
+        <p>
+          I enjoy working in collaborative environments, learning new
+          technologies, and taking on projects that make a meaningful impact.
+        </p>
+      </div>
+
+      <img src="img/myself-1.jpg" alt="Photo of Wilber" class="about-me__img" />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item.html?id=1" class="portfolio__item">
+          <img
+            src="img/PDP-cart.png"
+            alt="Product Page"
+            class="portfolio__img"
+          />
+        </a>
+        <a href="portfolio-item.html?id=2" class="portfolio__item">
+          <img
+            src="img/footer-after.png"
+            alt="Product Page"
+            class="portfolio__img"
+          />
+        </a>
+        <a href="portfolio-item.html?id=3" class="portfolio__item">
+          <img
+            src="img/videos-cart.png"
+            alt="Product Page"
+            class="portfolio__img"
+          />
+        </a>
+        <div class="portfolio__item coming-soon">
+          <div class="overlay">Project 4 – Under Development</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:wilber930328@gmail.com" class="footer__link"
+        >wilber930328@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/wilber-banos-pacheco-884ab9254/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/wbaos">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

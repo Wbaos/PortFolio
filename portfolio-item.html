@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilber Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea6c8c154e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        <strong>Project Title</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Subtitle</p>
+      <img src="img/portfolio-01.jpg" alt="" class="intro__img" />
+    </section>
+
+    <!-- Default Before/After context -->
+    <div class="project-context">
+      <div class="project-technologies"></div>
+
+      <h2 class="project-context__title">Before and After</h2>
+      <p class="project-context__description">
+        Below you can explore a visual comparison of the project’s impact. The
+        first image shows the original implementation, and the second image
+        shows the improved version after my redesign and development work.
+      </p>
+      <p class="project-context__description">
+        Scroll through the details below to see specific improvements, including
+        responsive layouts, API integrations, and better accessibility.
+      </p>
+    </div>
+
+    <div class="portfolio-item-individual">
+      <div class="project-intro" style="display: none"></div>
+
+      <div class="project-carousel" style="display: none">
+        <button class="carousel-arrow carousel-arrow--left" id="prevBtn">
+          &#10094;
+        </button>
+        <div class="carousel-track"></div>
+        <button class="carousel-arrow carousel-arrow--right" id="nextBtn">
+          &#10095;
+        </button>
+      </div>
+
+      <!-- ✅ Existing sections remain here -->
+
+      <div class="before-after-section"></div>
+
+      <div class="project-descriptions"></div>
+      <div class="project-detail-image"></div>
+      <div class="project-video"></div>
+    </div>
+
+    <footer class="footer">
+      <a href="mailto:wilber930328@gmail.com" class="footer__link"
+        >wilber930328@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/wilber-banos-pacheco-884ab9254/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/wbaos"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <div id="lightbox-modal">
+      <button class="lightbox-close">&times;</button>
+      <img id="lightbox-img" src="" alt="Expanded image" />
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>
