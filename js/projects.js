@@ -49,24 +49,24 @@ document.addEventListener("DOMContentLoaded", () => {
       const techContainer = document.querySelector(".project-technologies");
       if (techContainer && project.tech && project.tech.length > 0) {
         techContainer.innerHTML = `
-  <h2 class="project-context__title">Technologies Used</h2>
-  <div class="tech-grid">
-    ${project.tech
-      .map(
-        (t) => `
-        <div class="tech-item-wrapper">
-          <div class="tech-tooltip">${
-            t.info || "More info here"
-          }<span class="tooltip-arrow"></span></div>
-          <div class="tech-item holographic-card">
-            <h2>${t.name || t}</h2>
+          <h2 class="project-context__title">Technologies Used</h2>
+          <div class="tech-grid">
+            ${project.tech
+              .map(
+                (t) => `
+                <div class="tech-item-wrapper">
+                  <div class="tech-tooltip">${
+                    t.info || "More info here"
+                  }<span class="tooltip-arrow"></span></div>
+                  <div class="tech-item holographic-card">
+                    <h2>${t.name || t}</h2>
+                  </div>
+                </div>
+              `
+              )
+              .join("")}
           </div>
-        </div>
-      `
-      )
-      .join("")}
-  </div>
-`;
+        `;
       }
 
       // Handle before/after vs intro/carousel
@@ -223,9 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // =========================
   // Tooltip logic for tech items
-  // =========================
   const tooltip = document.getElementById("tech-tooltip");
 
   document.addEventListener("mouseover", (e) => {
