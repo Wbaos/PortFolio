@@ -6,16 +6,46 @@
     "subtitle": "Shopify E‑Commerce",
     "video": "PDP-1-Recording.mp4",
     "tech": [
-      "Shopify Liquid",
-      "JavaScript (ES6+)",
-      "Alpine.js",
-      "CSS Grid & Flexbox",
-      "Shopify Metafields API",
-      "Shopify Storefront API (GraphQL)",
-      "Custom REST APIs",
-      "LocalStorage",
-      "Fetch API",
-      "Lazy Loading Techniques"
+      {
+        "name": "Shopify Liquid",
+        "info": "Shopify’s templating language for dynamic theme logic."
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "info": "Modern JS features for dynamic interactivity."
+      },
+      {
+        "name": "Alpine.js",
+        "info": "Lightweight reactive JS for frontend interactions."
+      },
+      {
+        "name": "CSS Grid & Flexbox",
+        "info": "Responsive layout systems for flexible design."
+      },
+      {
+        "name": "Shopify Metafields API",
+        "info": "Custom fields for storing and retrieving product data."
+      },
+      {
+        "name": "Shopify Storefront API (GraphQL)",
+        "info": "Fetch store data dynamically via GraphQL."
+      },
+      {
+        "name": "Custom REST APIs",
+        "info": "Integrations with external services using REST."
+      },
+      {
+        "name": "LocalStorage",
+        "info": "Client-side storage for persisting data like favorites."
+      },
+      {
+        "name": "Fetch API",
+        "info": "Modern browser API for making network requests."
+      },
+      {
+        "name": "Lazy Loading Techniques",
+        "info": "Optimized asset loading to improve performance."
+      }
     ],
     "desc1": "• Redesigned the product gallery into a vertical carousel with image/video support, smooth scrolling, and clickable thumbnails.",
     "desc2": "• Added a dynamic star‑rating system with fractional ratings and live review counts pulled from Shopify metafields and APIs.",
@@ -37,19 +67,56 @@
     "title": "Responsive Footer Redesign",
     "subtitle": "Shopify Footer Redesign",
     "tech": [
-      "Shopify Liquid",
-      "JavaScript (ES6+)",
-      "Alpine.js",
-      "CSS Grid & Flexbox",
-      "Responsive Design Techniques",
-      "Shopify Theme Schema",
-      "Dynamic Linklists",
-      "Fetch API",
-      "Custom REST API (Cloudflare Newsletter Integration)",
-      "Shopify Metafields API",
-      "Lazy Loading Techniques",
-      "Cross‑Browser Testing & Accessibility"
+      {
+        "name": "Shopify Liquid",
+        "info": "Shopify’s templating language used to build dynamic themes."
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "info": "Modern JavaScript features for interactivity and logic."
+      },
+      {
+        "name": "Alpine.js",
+        "info": "A lightweight JavaScript framework for simple reactivity."
+      },
+      {
+        "name": "CSS Grid & Flexbox",
+        "info": "Advanced CSS layout techniques for responsive designs."
+      },
+      {
+        "name": "Responsive Design Techniques",
+        "info": "Ensuring the UI works on all screen sizes."
+      },
+      {
+        "name": "Shopify Theme Schema",
+        "info": "Dynamic theme configuration directly in the Shopify editor."
+      },
+      {
+        "name": "Dynamic Linklists",
+        "info": "Reusable menu structures powered by Shopify linklists."
+      },
+      {
+        "name": "Fetch API",
+        "info": "Modern browser API for making HTTP requests."
+      },
+      {
+        "name": "Custom REST API (Cloudflare Newsletter Integration)",
+        "info": "Integration with external APIs for newsletter sign‑ups."
+      },
+      {
+        "name": "Shopify Metafields API",
+        "info": "Storing and retrieving custom product data dynamically."
+      },
+      {
+        "name": "Lazy Loading Techniques",
+        "info": "Optimizing performance by loading assets on demand."
+      },
+      {
+        "name": "Cross‑Browser Testing & Accessibility",
+        "info": "Ensuring consistent behavior and inclusive design."
+      }
     ],
+
     "desc1": "Redesigned the store footer for a cleaner, modern look with improved visual hierarchy and brand consistency.",
     "desc2": "Implemented a fully responsive multi‑column layout with collapsible menus, adaptive spacing, and accessible navigation patterns for seamless usability across devices.",
     "desc3": "Integrated dynamic social media links and contact options, plus a newsletter sign‑up feature powered by a Cloudflare API to capture and process customer data in real time.",
@@ -66,18 +133,52 @@
     "title": "Interactive Shorts Feature",
     "subtitle": "Custom Video Carousel",
     "tech": [
-      "Shopify Liquid",
-      "Shopify Metafields API",
-      "JavaScript (ES6+)",
-      "Alpine.js",
-      "Fetch API",
-      "History API (pushState & popstate)",
-      "CSS Grid & Flexbox",
-      "Responsive Design Techniques",
-      "Dynamic DOM Manipulation",
-      "Clipboard API (Copy to Clipboard)",
-      "Video Element Controls"
+      {
+        "name": "Shopify Liquid",
+        "info": "Shopify’s templating language for building dynamic sections."
+      },
+      {
+        "name": "Shopify Metafields API",
+        "info": "Used to store and retrieve custom content for videos and metadata."
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "info": "Modern JavaScript features to implement carousel and video controls."
+      },
+      {
+        "name": "Alpine.js",
+        "info": "Lightweight framework to add interactivity without heavy overhead."
+      },
+      {
+        "name": "Fetch API",
+        "info": "Handles data requests for videos and dynamic loading of content."
+      },
+      {
+        "name": "History API (pushState & popstate)",
+        "info": "Allows seamless navigation and state management in the video carousel."
+      },
+      {
+        "name": "CSS Grid & Flexbox",
+        "info": "Used for layout of the carousel and responsive video sections."
+      },
+      {
+        "name": "Responsive Design Techniques",
+        "info": "Ensures the video carousel and player work across all devices."
+      },
+      {
+        "name": "Dynamic DOM Manipulation",
+        "info": "Enables updating video elements, metadata, and UI on the fly."
+      },
+      {
+        "name": "Clipboard API (Copy to Clipboard)",
+        "info": "Implements sharing features by copying video links to the clipboard."
+      },
+      {
+        "name": "Video Element Controls",
+        "info": "Customizes playback, pause, fullscreen, and download behavior."
+      }
     ],
+
     "intro": "This project introduced a completely new interactive video shorts section. I implemented the layout, carousel, and player controls from scratch, integrating share options and downloadable content according to the provided design.",
     "desc1": "Built a custom video carousel component with seamless navigation and responsive layout.",
     "desc2": "Integrated dynamic data from Shopify articles and metafields to load video content and metadata in real time.",
