@@ -45,17 +45,28 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // ✅ Technologies Used grid (moved OUTSIDE descContainer)
+      // ✅ Technologies Used grid
       const techContainer = document.querySelector(".project-technologies");
       if (techContainer && project.tech && project.tech.length > 0) {
         techContainer.innerHTML = `
-          <h2 class="project-context__title">Technologies Used</h2>
-          <div class="tech-grid">
-            ${project.tech
-              .map((t) => `<div class="tech-item">${t}</div>`)
-              .join("")}
+  <h2 class="project-context__title">Technologies Used</h2>
+  <div class="tech-grid">
+    ${project.tech
+      .map(
+        (t) => `
+        <div class="tech-item-wrapper">
+          <div class="tech-tooltip">${
+            t.info || "More info here"
+          }<span class="tooltip-arrow"></span></div>
+          <div class="tech-item holographic-card">
+            <h2>${t.name || t}</h2>
           </div>
-        `;
+        </div>
+      `
+      )
+      .join("")}
+  </div>
+`;
       }
 
       // Handle before/after vs intro/carousel
@@ -64,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const carouselContainer = document.querySelector(".project-carousel");
 
       if (project.before || project.after) {
-        // Show normal before/after section
         contextSection.style.display = "block";
         let html = "";
         if (project.before) {
@@ -98,9 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (project.intro) {
           introContainer.style.display = "block";
           introContainer.innerHTML = `
-          <h2 class="project-intro__title">About this Project</h2>
-          <p class="project-intro__text">${project.intro}</p>
-        `;
+            <h2 class="project-intro__title">About this Project</h2>
+            <p class="project-intro__text">${project.intro}</p>
+          `;
         }
         if (project.carousel && project.carousel.length > 0) {
           carouselContainer.style.display = "block";
@@ -210,6 +220,32 @@ document.addEventListener("DOMContentLoaded", () => {
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
+    }
+  });
+
+  // =========================
+  // Tooltip logic for tech items
+  // =========================
+  const tooltip = document.getElementById("tech-tooltip");
+
+  document.addEventListener("mouseover", (e) => {
+    const card = e.target.closest(".tech-item");
+    if (card && card.dataset.info) {
+      tooltip.textContent = card.dataset.info;
+      tooltip.style.display = "block";
+    }
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (tooltip.style.display === "block") {
+      tooltip.style.left = e.pageX + "px";
+      tooltip.style.top = e.pageY - 30 + "px";
+    }
+  });
+
+  document.addEventListener("mouseout", (e) => {
+    if (e.target.closest(".tech-item")) {
+      tooltip.style.display = "none";
     }
   });
 });
