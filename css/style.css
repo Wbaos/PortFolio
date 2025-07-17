@@ -149,6 +149,16 @@ h3 {
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
   color: var(--clr-accent);
+}
+
+.wave-text .word {
+  display: inline-block;
+  white-space: nowrap;
+  animation: none;
+}
+
+.wave-text > span,
+.wave-text .word > span {
   animation: wave 2s ease-in-out infinite;
 }
 
