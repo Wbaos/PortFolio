@@ -184,7 +184,7 @@
     "desc2": "Integrated dynamic data from Shopify articles and metafields to load video content and metadata in real time.",
     "desc3": "Implemented share, and download for each video.",
     "desc4": "Optimized for mobile with touch‑friendly controls and adaptive layouts.",
-    "carousel": ["videos-1.png", "videos-2.png", "videos-3.png"],
+    "carousel": ["videos-3.png", "videos-1.png", "videos-2.png"],
     "video": "shorts-recording.mp4"
   }
 ]
